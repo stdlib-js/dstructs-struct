@@ -134,6 +134,7 @@ TODO: document constructor API
 -   While struct instances aim to emulate C `struct` behavior, structs have the following differences:
 
     -   The struct schema supports default values. In C, uninitialized members are zero-filled.
+    -   The struct schema supports "casting modes", which govern member assignment operations and support placing (or relaxing) strict requirements on what types of values may be assigned to struct members. In C, members have no such limitations, with the C compiler performing implicit casting (e.g., a signed integer will be implicitly cast to an unsigned integer when a member has an unsigned integer data type).
     -   Only fixed-width types are supported (e.g., `int8`, `float64`, etc). In C, members can have types which may vary across platforms (e.g., `int`).
     -   Member types must be serializable to an ArrayBuffer (e.g., no functions, general objects, etc). In C, members have no such limitations (e.g., a member can be a function pointer).
     -   Union types must all have the same byte length. In C, members of union types can have different byte lengths.
