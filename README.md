@@ -31,7 +31,7 @@ limitations under the License.
 
 # struct
 
-[![NPM version][npm-image]][npm-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Fixed-width composite data type (a.k.a., a `struct`).
 
