@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`b8eaf74`](https://github.com/stdlib-js/stdlib/commit/b8eaf74c49f8c0c5b256de4640a10e57bfa7d790) - address missing attribute and relax brand checks
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`b8eaf74`](https://github.com/stdlib-js/stdlib/commit/b8eaf74c49f8c0c5b256de4640a10e57bfa7d790) - **fix:** address missing attribute and relax brand checks _(by Athan Reines)_
 -   [`f4a90b1`](https://github.com/stdlib-js/stdlib/commit/f4a90b18816acbb01c3c5afd7fba965c8a617ec1) - **chore:** add test and benchmark stubs _(by Athan Reines)_
 -   [`24a79a0`](https://github.com/stdlib-js/stdlib/commit/24a79a0b97e2191aa52abe3fe336505472060d35) - **docs:** add note _(by Athan Reines)_
 -   [`195071c`](https://github.com/stdlib-js/stdlib/commit/195071c47d1088fc1b024023c9b9b693fc6282cb) - **style:** disable lint rule _(by Athan Reines)_
