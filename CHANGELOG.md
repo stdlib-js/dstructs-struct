@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-17)
+## Unreleased (2025-06-18)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`578606d`](https://github.com/stdlib-js/stdlib/commit/578606d017a4b5422da0f7e7cab73d80c97271e1) - **docs:** add note _(by Athan Reines)_
 -   [`b8eaf74`](https://github.com/stdlib-js/stdlib/commit/b8eaf74c49f8c0c5b256de4640a10e57bfa7d790) - **fix:** address missing attribute and relax brand checks _(by Athan Reines)_
 -   [`f4a90b1`](https://github.com/stdlib-js/stdlib/commit/f4a90b18816acbb01c3c5afd7fba965c8a617ec1) - **chore:** add test and benchmark stubs _(by Athan Reines)_
 -   [`24a79a0`](https://github.com/stdlib-js/stdlib/commit/24a79a0b97e2191aa52abe3fe336505472060d35) - **docs:** add note _(by Athan Reines)_
