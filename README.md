@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/dstructs-struct
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@esm/index.mjs';
+var struct = require( '@stdlib/dstructs-struct' );
 ```
 
 #### struct( schema )
@@ -117,13 +135,15 @@ TODO: document constructor API
 
     -   The struct schema supports default values. In C, uninitialized members are zero-filled.
     -   The struct schema supports "casting modes", which govern member assignment operations and support placing (or relaxing) strict requirements on what types of values may be assigned to struct members. In C, members have no such limitations, with the C compiler performing implicit casting (e.g., a signed integer will be implicitly cast to an unsigned integer when a member has an unsigned integer data type).
-    -   Only fixed-width types are supported (e.g., `int8`, `float64`, etc). In C, members can have types which may vary across platforms (e.g., `int`).
+    -   Only fixed-width types are supported (e.g., `int8`, `float64`, etc). In C, members can have types which may vary across platforms (e.g., `int`, `enum`, `long double`, etc).
     -   Member types must be serializable to an ArrayBuffer (e.g., no functions, general objects, etc). In C, members have no such limitations (e.g., a member can be a function pointer).
     -   Union types must all have the same byte length. In C, members of union types can have different byte lengths.
     -   struct instances can have "hidden" (i.e., non-enumerable) fields. In C, all members are part of a `struct`'s public API.
     -   struct instances can have read-only fields. In C, one can use a `const` qualifier to prevent assignment after initialization; however, one can circumvent this restriction using pointer tricks.
     -   Member types can have an associated description, which is useful when wanting to inspect struct instances in interactive contexts, such as REPLs.
     -   struct instances support string and JSON serialization.
+
+-   A primary use case for emulating C `struct` behavior is to facilitate interoperation between JavaScript and C. For example, by creating a JavaScript struct instance which has the same alignment and layout as a C `struct`, one can pass a pointer to a struct instance's underlying byte buffer from JavaScript to C and then simply perform a cast to interpret as an equivalent C `struct`. This enables zero-copy interchange when, e.g., calling into Node.js native native add-ons and can greatly reduce overhead when working with heterogeneous composite data types.
 
 </section>
 
@@ -137,14 +157,9 @@ TODO: document constructor API
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@esm/index.mjs';
+```javascript
+var Float64Array = require( '@stdlib/array-float64' );
+var struct = require( '@stdlib/dstructs-struct' );
 
 var fields = [
     {
@@ -258,10 +273,6 @@ console.log( 'Offset: %d', offset );
 
 var desc = Struct.descriptionOf( 'alpha' );
 console.log( 'Description: %s', desc );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -293,7 +304,7 @@ console.log( 'Description: %s', desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
