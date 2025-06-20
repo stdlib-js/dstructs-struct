@@ -36,6 +36,7 @@
 
 <details>
 
+-   [`009da93`](https://github.com/stdlib-js/stdlib/commit/009da9301a20e2dedd243ba9b7f747fd962f105e) - **docs:** fix types _(by Athan Reines)_
 -   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - **feat:** add support for serializing a struct layout _(by Athan Reines)_
 -   [`1d86748`](https://github.com/stdlib-js/stdlib/commit/1d867483b41d6624413b5e7e2f50610158a5fe92) - **docs:** update parameter description _(by Athan Reines)_
 -   [`4d872c8`](https://github.com/stdlib-js/stdlib/commit/4d872c85075efbb806cae6e16043bd6edc6ab55c) - **fix:** always limit DataViews to a minimal view of struct memory _(by Athan Reines)_
