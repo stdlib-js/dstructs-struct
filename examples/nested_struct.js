@@ -18,52 +18,62 @@
 
 'use strict';
 
-var toWords = require( '@stdlib/number-float64-base-to-words' );
 var factory = require( './../lib' );
 
-var fields = [
+var fields1 = [
 	{
-		'type': 'union',
-		'fields': [
-			{
-				'name': 'double',
-				'description': 'double-precision floating-point number',
-				'type': 'float64',
-				'enumerable': true,
-				'writable': true,
-				'castingMode': 'none'
-			},
-			{
-				'name': 'words',
-				'description': 'high and low words',
-				'type': 'uint32',
-				'length': 2,
-				'enumerable': true,
-				'writable': true,
-				'castingMode': 'none'
-			}
-		]
+		'name': 'high',
+		'description': 'high word',
+		'type': 'uint32',
+		'enumerable': true,
+		'writable': true,
+		'castingMode': 'none'
+	},
+	{
+		'name': 'low',
+		'description': 'low word',
+		'type': 'uint32',
+		'enumerable': true,
+		'writable': true,
+		'castingMode': 'none'
 	}
 ];
+var Struct1 = factory( fields1 );
 
-var Struct = factory( fields );
+var fields2 = [
+	{
+		'name': 'double',
+		'description': 'double-precision floating-point number',
+		'type': 'float64',
+		'enumerable': true,
+		'writable': true,
+		'castingMode': 'none'
+	},
+	{
+		'name': 'words',
+		'description': 'high and low words',
+		'type': new Struct1(),
+		'enumerable': true,
+		'writable': true,
+		'castingMode': 'none'
+	}
+];
+var Struct2 = factory( fields2 );
 
-var s = new Struct({
-	'double': 3.14
-});
+var s = new Struct2();
 // returns <Struct>
 
-var byteLength = Struct.byteLength;
+var byteLength = Struct2.byteLength;
 console.log( 'Byte length: %d', byteLength );
 
-var alignment = Struct.alignment;
+var alignment = Struct2.alignment;
 console.log( 'Alignment: %d', alignment );
 
-var names = Struct.fields;
+var names = Struct2.fields;
 console.log( 'Field names: %s', names.join( ', ' ) );
 
 var str1 = s.toString({
-	'format': 'linear'
+	'format': 'layout'
 });
 console.log( 'String:\n%s', str1 );
 
@@ -75,11 +85,5 @@ console.log( 'Layout: %s', str2 );
 var o = s.toJSON();
 console.log( o );
 
-var offset = Struct.byteOffsetOf( 'double' );
+var offset = Struct2.byteOffsetOf( 'double' );
 console.log( 'Offset: %d', offset );
-
-var words1 = s.words;
-console.log( 'Words: [%s]', words1.join( ', ' ) );
-
-var words2 = toWords( 3.14 );
-console.log( 'Words: [%s]', words2.join( ', ' ) );

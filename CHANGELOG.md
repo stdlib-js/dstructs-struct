@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-19)
+## Unreleased (2025-06-20)
 
 <section class="features">
 
 ### Features
 
+-   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - add support for serializing a struct layout
 -   [`13b4d50`](https://github.com/stdlib-js/stdlib/commit/13b4d50284b4f5ba44c714add98ae8d04606cb86) - add initial implementation of `dstructs/struct`
 
 </section>
@@ -35,6 +36,7 @@
 
 <details>
 
+-   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - **feat:** add support for serializing a struct layout _(by Athan Reines)_
 -   [`1d86748`](https://github.com/stdlib-js/stdlib/commit/1d867483b41d6624413b5e7e2f50610158a5fe92) - **docs:** update parameter description _(by Athan Reines)_
 -   [`4d872c8`](https://github.com/stdlib-js/stdlib/commit/4d872c85075efbb806cae6e16043bd6edc6ab55c) - **fix:** always limit DataViews to a minimal view of struct memory _(by Athan Reines)_
 -   [`4ecf9ad`](https://github.com/stdlib-js/stdlib/commit/4ecf9ad5376fd7362fa915b9a9308b3d9cb271b8) - **refactor:** create a minimal view _(by Athan Reines)_
