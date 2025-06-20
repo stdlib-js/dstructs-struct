@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`cd45405`](https://github.com/stdlib-js/stdlib/commit/cd4540545270de354c76083e571c587ac3c59a6e) - add method to resolve a field type
 -   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - add support for serializing a struct layout
 -   [`13b4d50`](https://github.com/stdlib-js/stdlib/commit/13b4d50284b4f5ba44c714add98ae8d04606cb86) - add initial implementation of `dstructs/struct`
 
@@ -30,12 +31,24 @@
 
 <!-- /.bug-fixes -->
 
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`35b2ba1`](https://github.com/stdlib-js/stdlib/commit/35b2ba1424e7e89e9cd0f4cb5a199738a3f98747): require nested struct types be struct constructors
+
+</section>
+
+<!-- /.breaking-changes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`35b2ba1`](https://github.com/stdlib-js/stdlib/commit/35b2ba1424e7e89e9cd0f4cb5a199738a3f98747) - **refactor:** require nested struct types be struct constructors _(by Athan Reines)_
+-   [`cd45405`](https://github.com/stdlib-js/stdlib/commit/cd4540545270de354c76083e571c587ac3c59a6e) - **feat:** add method to resolve a field type _(by Athan Reines)_
 -   [`009da93`](https://github.com/stdlib-js/stdlib/commit/009da9301a20e2dedd243ba9b7f747fd962f105e) - **docs:** fix types _(by Athan Reines)_
 -   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - **feat:** add support for serializing a struct layout _(by Athan Reines)_
 -   [`1d86748`](https://github.com/stdlib-js/stdlib/commit/1d867483b41d6624413b5e7e2f50610158a5fe92) - **docs:** update parameter description _(by Athan Reines)_

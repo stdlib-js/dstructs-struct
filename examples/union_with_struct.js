@@ -57,7 +57,7 @@ var fields2 = [
 			{
 				'name': 'words',
 				'description': 'high and low words',
-				'type': new Struct1(),
+				'type': Struct1,
 				'enumerable': true,
 				'writable': true,
 				'castingMode': 'none'
