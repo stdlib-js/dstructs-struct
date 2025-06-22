@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-21)
+## Unreleased (2025-06-22)
 
 <section class="features">
 
@@ -47,6 +47,7 @@
 
 <details>
 
+-   [`5aeb4ef`](https://github.com/stdlib-js/stdlib/commit/5aeb4ef105b90890e89ab138a55316c2d6546f71) - **chore:** update package meta data [(#7442)](https://github.com/stdlib-js/stdlib/pull/7442) _(by stdlib-bot)_
 -   [`6d57645`](https://github.com/stdlib-js/stdlib/commit/6d576457c3f4c7ed67481aaf6161d7c1c63874eb) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`35b2ba1`](https://github.com/stdlib-js/stdlib/commit/35b2ba1424e7e89e9cd0f4cb5a199738a3f98747) - **refactor:** require nested struct types be struct constructors _(by Athan Reines)_
 -   [`cd45405`](https://github.com/stdlib-js/stdlib/commit/cd4540545270de354c76083e571c587ac3c59a6e) - **feat:** add method to resolve a field type _(by Athan Reines)_
