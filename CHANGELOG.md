@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-22)
+## Unreleased (2025-06-23)
 
 <section class="features">
 
@@ -47,6 +47,7 @@
 
 <details>
 
+-   [`76ebd1b`](https://github.com/stdlib-js/stdlib/commit/76ebd1b06c85827a8166579c0a97c6bb20737e24) - **refactor:** use assert utility _(by Athan Reines)_
 -   [`5aeb4ef`](https://github.com/stdlib-js/stdlib/commit/5aeb4ef105b90890e89ab138a55316c2d6546f71) - **chore:** update package meta data [(#7442)](https://github.com/stdlib-js/stdlib/pull/7442) _(by stdlib-bot)_
 -   [`6d57645`](https://github.com/stdlib-js/stdlib/commit/6d576457c3f4c7ed67481aaf6161d7c1c63874eb) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`35b2ba1`](https://github.com/stdlib-js/stdlib/commit/35b2ba1424e7e89e9cd0f4cb5a199738a3f98747) - **refactor:** require nested struct types be struct constructors _(by Athan Reines)_
