@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2025-06-24)
 
 <section class="features">
 
 ### Features
 
+-   [`bf26784`](https://github.com/stdlib-js/stdlib/commit/bf26784b458dee86137cc92cb269719cb6e0799e) - add `isStruct` method
 -   [`cd45405`](https://github.com/stdlib-js/stdlib/commit/cd4540545270de354c76083e571c587ac3c59a6e) - add method to resolve a field type
 -   [`4242b0c`](https://github.com/stdlib-js/stdlib/commit/4242b0cfa7df434d6b33ca306acfbb24d573cfa5) - add support for serializing a struct layout
 -   [`13b4d50`](https://github.com/stdlib-js/stdlib/commit/13b4d50284b4f5ba44c714add98ae8d04606cb86) - add initial implementation of `dstructs/struct`
@@ -47,6 +48,7 @@
 
 <details>
 
+-   [`bf26784`](https://github.com/stdlib-js/stdlib/commit/bf26784b458dee86137cc92cb269719cb6e0799e) - **feat:** add `isStruct` method _(by Athan Reines)_
 -   [`76ebd1b`](https://github.com/stdlib-js/stdlib/commit/76ebd1b06c85827a8166579c0a97c6bb20737e24) - **refactor:** use assert utility _(by Athan Reines)_
 -   [`5aeb4ef`](https://github.com/stdlib-js/stdlib/commit/5aeb4ef105b90890e89ab138a55316c2d6546f71) - **chore:** update package meta data [(#7442)](https://github.com/stdlib-js/stdlib/pull/7442) _(by stdlib-bot)_
 -   [`6d57645`](https://github.com/stdlib-js/stdlib/commit/6d576457c3f4c7ed67481aaf6161d7c1c63874eb) - **docs:** fix descriptions _(by Athan Reines)_
