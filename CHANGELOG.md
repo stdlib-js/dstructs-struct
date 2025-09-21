@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2025-09-21)
 
 <section class="features">
 
@@ -48,6 +48,7 @@
 
 <details>
 
+-   [`0aef010`](https://github.com/stdlib-js/stdlib/commit/0aef01041f11f7c706de2e6e2b76c49d80a8ef28) - **refactor:** reorder methods _(by Athan Reines)_
 -   [`bf26784`](https://github.com/stdlib-js/stdlib/commit/bf26784b458dee86137cc92cb269719cb6e0799e) - **feat:** add `isStruct` method _(by Athan Reines)_
 -   [`76ebd1b`](https://github.com/stdlib-js/stdlib/commit/76ebd1b06c85827a8166579c0a97c6bb20737e24) - **refactor:** use assert utility _(by Athan Reines)_
 -   [`5aeb4ef`](https://github.com/stdlib-js/stdlib/commit/5aeb4ef105b90890e89ab138a55316c2d6546f71) - **chore:** update package meta data [(#7442)](https://github.com/stdlib-js/stdlib/pull/7442) _(by stdlib-bot)_
