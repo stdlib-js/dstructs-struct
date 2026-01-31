@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@esm/index.mjs';
+import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@v0.1.0-esm/index.mjs';
 ```
 
 #### struct( schema )
@@ -146,7 +146,7 @@ TODO: document constructor API
 <script type="module">
 
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@esm/index.mjs';
+import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@v0.1.0-esm/index.mjs';
 
 var fields = [
     {
