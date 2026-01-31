@@ -3,30 +3,8 @@
   "version": "0.1.0",
   "description": "Fixed-width composite data type (a.k.a., a `struct`).",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "directories": {
-    "benchmark": "./benchmark",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "type": "module",
+  "main": "./mod.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -35,90 +13,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/array-base-assert-contains": "^0.2.2",
-    "@stdlib/array-base-assert-is-boolean-data-type": "^0.0.1",
-    "@stdlib/array-base-assert-is-complex-floating-point-data-type": "^0.2.1",
-    "@stdlib/array-base-assert-is-real-data-type": "^0.2.1",
-    "@stdlib/array-base-assert-is-real-floating-point-data-type": "^0.2.1",
-    "@stdlib/array-base-assert-is-signed-integer-data-type": "^0.2.1",
-    "@stdlib/array-base-filled": "^0.2.2",
-    "@stdlib/array-base-index-of": "^0.3.0",
-    "@stdlib/array-base-join": "^0.1.1",
-    "@stdlib/array-base-map": "github:stdlib-js/array-base-map#main",
-    "@stdlib/array-base-min-signed-integer-dtype": "^0.2.2",
-    "@stdlib/array-buffer": "^0.2.2",
-    "@stdlib/array-dataview": "^0.2.2",
-    "@stdlib/array-dtype": "^0.3.0",
-    "@stdlib/array-min-dtype": "^0.3.0",
-    "@stdlib/array-to-json": "^0.3.0",
-    "@stdlib/array-typed": "^0.3.1",
-    "@stdlib/array-uint8": "^0.2.2",
-    "@stdlib/assert-has-own-property": "^0.2.2",
-    "@stdlib/assert-has-property": "^0.2.2",
-    "@stdlib/assert-is-arraybuffer": "^0.2.2",
-    "@stdlib/assert-is-bigint": "^0.2.3",
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/assert-is-collection": "^0.2.2",
-    "@stdlib/assert-is-complex-like": "^0.2.2",
-    "@stdlib/assert-is-dataview": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-integer": "^0.2.2",
-    "@stdlib/assert-is-little-endian": "^0.2.2",
-    "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
-    "@stdlib/assert-is-number": "^0.2.2",
-    "@stdlib/assert-is-object": "^0.2.2",
-    "@stdlib/assert-is-plain-object": "^0.2.2",
-    "@stdlib/assert-is-positive-integer": "^0.2.2",
-    "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/assert-is-struct-constructor-like": "^0.1.0",
-    "@stdlib/bigint-ctor": "^0.2.2",
-    "@stdlib/blas-base-gcopy": "^0.2.2",
-    "@stdlib/blas-ext-base-gfill": "^0.2.2",
-    "@stdlib/boolean-ctor": "^0.2.2",
-    "@stdlib/complex-cmplx": "^0.2.2",
-    "@stdlib/complex-dtype": "^0.2.2",
-    "@stdlib/math-base-special-fast-min": "^0.3.0",
-    "@stdlib/math-base-special-floor": "^0.2.3",
-    "@stdlib/ndarray-base-assert-is-allowed-data-type-cast": "^0.3.0",
-    "@stdlib/ndarray-base-bytes-per-element": "^0.3.0",
-    "@stdlib/number-ctor": "^0.2.2",
-    "@stdlib/strided-base-reinterpret-boolean": "^0.0.2",
-    "@stdlib/strided-base-reinterpret-complex": "^0.1.2",
-    "@stdlib/string-base-replace": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
-    "@stdlib/utils-constant-function": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.2.2",
-    "@stdlib/utils-define-read-only-accessor": "^0.2.2",
-    "@stdlib/utils-define-read-write-accessor": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
-  },
-  "devDependencies": {
-    "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/complex-float64-ctor": "^0.1.0",
-    "@stdlib/number-float64-base-to-words": "^0.2.2",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "data structures",
