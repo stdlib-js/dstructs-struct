@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@deno/mod.js';
+import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@v0.1.1-deno/mod.js';
 ```
 
 #### struct( schema )
@@ -141,7 +141,7 @@ TODO: document constructor API
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@deno/mod.js';
+import struct from 'https://cdn.jsdelivr.net/gh/stdlib-js/dstructs-struct@v0.1.1-deno/mod.js';
 
 var fields = [
     {
