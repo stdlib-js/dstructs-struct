@@ -45,7 +45,7 @@
     "@stdlib/array-base-filled": "^0.2.3",
     "@stdlib/array-base-index-of": "^0.3.1",
     "@stdlib/array-base-join": "^0.1.2",
-    "@stdlib/array-base-map": "^0.1.0",
+    "@stdlib/array-base-map": "^0.1.1",
     "@stdlib/array-base-min-signed-integer-dtype": "^0.2.3",
     "@stdlib/array-buffer": "^0.2.3",
     "@stdlib/array-dataview": "^0.2.3",
